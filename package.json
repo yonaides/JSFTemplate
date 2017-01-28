@@ -1,0 +1,15 @@
+{
+  "name": "CoreUI",
+  "version": "1.0.0-alpha.3",
+  "description": "",
+  "main": "index.html",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Łukasz Holeczek",
+  "url": "http://coreui.io",
+  "copyright": "Copyright 2016 creativeLabs Łukasz Holeczek",
+  "license": "http://coreui.io/license"
+}

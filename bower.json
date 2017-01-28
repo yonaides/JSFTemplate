@@ -1,0 +1,8 @@
+{
+  "name": "CoreUI",
+  "version": "1.0.0-alpha.2 (jQuery & Static Version)",
+  "directory": "./web/resources/",
+  "dependencies": {},
+  "private": true,
+  "devDependencies": {}
+}
