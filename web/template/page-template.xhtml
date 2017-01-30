@@ -44,21 +44,81 @@ and open the template in the editor.
         <ui:debug hotkey="e"/>
         <ui:include src="./page-header.xhtml"/>
 
-        <ui:include src="page-body.xhtml">
-            <ui:insert name="container">
+        <div class="app-body">
+            <div class="sidebar">
+                <nav class="sidebar-nav">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <h:link class="nav-link" outcome="/index">
+                                <i class="icon-speedometer"></i> DashBoard
+                            </h:link>
+                        </li>
 
-            </ui:insert>
-        </ui:include>
+                        <li class="nav-title">
+                            Enlaces
+                        </li>
+
+                        <!--<li class="nav-item nav-dropdown">
+                            <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-star"></i> Icons</a>
+                            <ul class="nav-dropdown-items">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="icons-font-awesome.html"><i class="icon-star"></i> Font Awesome</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="icons-simple-line-icons.html"><i class="icon-star"></i> Simple Line Icons</a>
+                                </li>
+                            </ul>
+                        </li> -->
+
+
+                        <li class="nav-item">
+                            <h:link class="nav-link" outcome="/vistas/cliente">
+                                <i class="icon-people"></i> Clientes
+                            </h:link>
+                        </li>
+
+                        <li class="nav-item">
+                            <h:link class="nav-link" outcome="/vistas/articulo">
+                                <i class="icon-shuffle"></i> Articulos
+                            </h:link>
+
+                        </li>
+
+                        <li class="nav-item">
+                            <h:link class="nav-link" outcome="/vistas/facturar">
+                                <i class="icon-calculator"></i> Facturar
+                            </h:link>
+                        </li> 
+
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Main content -->
+            <main class="main">
+                <!-- /.conainer-fluid -->
+                <div class="container-fluid">
+                    <ui:insert name="container">
+
+                    </ui:insert>
+                </div>
+                <!-- /.conainer-fluid -->
+            </main>
+            <!-- Main content -->
+        </div>
 
         <ui:include src="./page-footer.xhtml"/>
 
+        <h:outputScript library="primefaces" name="jquery/jquery.js" target="head" />
+        <h:outputScript library="omnifaces" name="fixviewstate.js" target="head" />
+        
         <!-- Bootstrap and necessary plugins -->
         <!--<h:outputScript name="jquery.min.js" library="jquery/dist"></h:outputScript>
         <h:outputScript name="tether.min.js" library="tether/dist/js"></h:outputScript>
         <h:outputScript name="bootstrap.min.js" library="bootstrap/dist/js" ></h:outputScript>
         <h:outputScript name="pace.min.js" library="pace"></h:outputScript> -->
-        
-        <script src="./resources/jquery/dist/jquery.min.js"></script>
+
+        <!--<script src="./resources/jquery/dist/jquery.min.js"></script>-->
         <script src="./resources/tether/dist/js/tether.min.js"></script>
         <script src="./resources/bootstrap/dist/js/bootstrap.min.js"></script>
         <script src="./resources/pace/pace.min.js"></script>
