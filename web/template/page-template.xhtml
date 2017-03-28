@@ -58,19 +58,6 @@ and open the template in the editor.
                             Enlaces
                         </li>
 
-                        <!--<li class="nav-item nav-dropdown">
-                            <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-star"></i> Icons</a>
-                            <ul class="nav-dropdown-items">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="icons-font-awesome.html"><i class="icon-star"></i> Font Awesome</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="icons-simple-line-icons.html"><i class="icon-star"></i> Simple Line Icons</a>
-                                </li>
-                            </ul>
-                        </li> -->
-
-
                         <li class="nav-item">
                             <h:link class="nav-link" outcome="/vistas/cliente">
                                 <i class="icon-people"></i> Clientes
@@ -96,12 +83,14 @@ and open the template in the editor.
 
             <!-- Main content -->
             <main class="main">
-                <!-- /.conainer-fluid -->
-                <div class="container-fluid">
-                    <ui:insert name="container">
+                <ui:insert name="main">
+                    <!-- /.conainer-fluid -->
+                    <div class="container-fluid">
+                        <ui:insert name="container">
 
-                    </ui:insert>
-                </div>
+                        </ui:insert>
+                    </div>
+                </ui:insert>
                 <!-- /.conainer-fluid -->
             </main>
             <!-- Main content -->
@@ -111,7 +100,7 @@ and open the template in the editor.
 
         <h:outputScript library="primefaces" name="jquery/jquery.js" target="head" />
         <h:outputScript library="omnifaces" name="fixviewstate.js" target="head" />
-        
+
         <!-- Bootstrap and necessary plugins -->
         <!--<h:outputScript name="jquery.min.js" library="jquery/dist"></h:outputScript>
         <h:outputScript name="tether.min.js" library="tether/dist/js"></h:outputScript>
